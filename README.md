@@ -6,4 +6,4 @@
 
 
 
-#IRC Channel: #LibreCalendar
+IRC Channel: #LibreCalendar
