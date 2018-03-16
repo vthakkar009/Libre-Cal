@@ -14,6 +14,14 @@ We yearn to provide an open source alternative to current calender applications 
 **Commands**
 
 
+**Installing**
+
+**License**
+This project is licensed under the GPL license - see the file for details
+
+
+
+
 
 
 IRC Channel: #LibreCalendar
