@@ -17,9 +17,11 @@ We yearn to provide an open source alternative to current calender applications 
 **Installing**
 
 **License**
-This project is licensed under the GPL license - see the file for details
+This project is licensed under the GPL license -  licence.md see the file for details
 
 
+**Contribution**
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
 
 
