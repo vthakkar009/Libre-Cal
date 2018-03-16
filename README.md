@@ -28,4 +28,4 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 
 
 
-IRC Channel: #LibreCalendar
+**IRC Channel**: #LibreCalendar
