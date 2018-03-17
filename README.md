@@ -25,6 +25,10 @@ This project is licensed under the GPL license -  licence.md see the file for de
 
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
+**FAQS**
+
+For any questions please read our FAQS located in our wiki.
+
 
 
 
