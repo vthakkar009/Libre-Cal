@@ -32,4 +32,4 @@ For any questions please read our FAQS located in our wiki.
 
 
 
-**IRC Channel**: #LibreCalendar
+**IRC Channel**: #LibreCalendar 
