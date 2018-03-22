@@ -22,7 +22,7 @@ We yearn to provide an open source alternative to current calender applications 
 
 **License**
 
-This project is licensed under the GPL license -  licence.md see the file for details
+This project is licensed under the GPL license -  [licence.md](https://github.com/qariane/Libre-Cal/blob/master/LICENSE.md) see the file for details
 
 
 **Contribution**
