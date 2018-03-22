@@ -27,7 +27,7 @@ This project is licensed under the GPL license -  licence.md see the file for de
 
 **Contribution**
 
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/qariane/Libre-Cal/blob/master/contribution.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 **FAQS**
 
