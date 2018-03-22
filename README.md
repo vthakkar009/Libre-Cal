@@ -8,9 +8,9 @@ We yearn to provide an open source alternative to current calender applications 
 
 
 **Features**
-- Using voice to add an event
-- Using voice to delete an event 
-- Ask for event information
+- Add an event
+- delete an event 
+- Change an event
 - Reminder
 
 
