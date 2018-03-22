@@ -31,7 +31,7 @@ Please read [CONTRIBUTING.md](https://github.com/qariane/Libre-Cal/blob/master/c
 
 **FAQS**
 
-For any questions please read our FAQS located in our wiki.
+For any questions please read our [FAQS](https://github.com/qariane/Libre-Cal/wiki/FAQS) located in our wiki.
 
 
 
