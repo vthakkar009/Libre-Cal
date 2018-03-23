@@ -39,6 +39,7 @@ For any questions please read our [FAQS](https://github.com/qariane/Libre-Cal/wi
 
 
 **Code Documentation**:
+
 For more information about our [documentation](https://github.com/qariane/Libre-Cal/wiki/DOCUMENTATION) please visit our wiki page.
 
 
