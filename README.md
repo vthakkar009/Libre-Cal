@@ -13,10 +13,12 @@ We yearn to provide an open source alternative to current calender applications 
 - Change an event
 - Reminder
 
-**Commands**
-
 
 **Installation and Build Scripts**
+Please read the [installation and build scripts](https://github.com/qariane/Libre-Cal/wiki/Installation-and-Build-Scripts) located in our wiki.
+
+**Testing**
+Please read [Testing] located in our wiki for more details.
 
 **License**
 
