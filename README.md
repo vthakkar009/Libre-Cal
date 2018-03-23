@@ -15,10 +15,13 @@ We yearn to provide an open source alternative to current calender applications 
 
 
 **Installation and Build Scripts**
+
 Please read the [installation and build scripts](https://github.com/qariane/Libre-Cal/wiki/Installation-and-Build-Scripts) located in our wiki.
 
 **Testing**
+
 Please read [Testing] located in our wiki for more details.
+
 
 **License**
 
@@ -28,6 +31,7 @@ This project is licensed under the GPL license  please read [license.md](https:/
 **Contribution**
 
 Please read [CONTRIBUTING.md](https://github.com/qariane/Libre-Cal/blob/master/contribution.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
 
 **FAQS**
 
