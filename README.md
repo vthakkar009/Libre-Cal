@@ -20,7 +20,7 @@ Please read the [installation and build scripts](https://github.com/qariane/Libr
 
 **Testing**
 
-Please read [Testing] located in our wiki for more details.
+Please read [Testing](https://github.com/qariane/Libre-Cal/wiki/TESTING) located in our wiki for more details.
 
 
 **License**
