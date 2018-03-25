@@ -61,3 +61,11 @@ For more information about our [documentation](https://github.com/qariane/Libre-
 
 
 
+- Delete an event
+In order to delete an event:
+Go to the app
+Click on the event that you want to delete
+Click delete
+To delete all the events, click empty
+You are good to go
+
