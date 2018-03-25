@@ -22,8 +22,34 @@ We yearn to provide an open source alternative to current calender applications 
    
    Finally, you want to save your event.
    
-- delete an event 
-- Change an event
+- Delete an event
+
+In order to delete an event:
+
+Go to the app
+
+Click on the event that you want to delete
+
+Click delete
+
+To delete all the events, click empty
+
+You are good to go
+
+ - Change an event
+ 
+You can simply change an event by:
+
+Going to the app 
+
+Click on the event that you want to delete
+
+Click edit/change
+
+After making your changes, click save
+
+you will be able able to update your event
+
 - Reminder
 
 
@@ -63,19 +89,4 @@ For more information about our [documentation](https://github.com/qariane/Libre-
 
 
 
-- Delete an event
-In order to delete an event:
-Go to the app
-Click on the event that you want to delete
-Click delete
-To delete all the events, click empty
-You are good to go
-
- - Change an event
-You can simply change an event by:
-Going to the app 
-Click on the event that you want to delete
-Click edit/change
-After making your changes, click save
-you will be able able to update your event
 
