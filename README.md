@@ -9,12 +9,19 @@ We yearn to provide an open source alternative to current calender applications 
 
 **Features**
 - Add an event
+
    To add an event you can put all the details concerning your event in the following order: 
+   
    Click add an event
+   
    Add a titile to the event 
+   
    Location: Adding an address into the location to remember where the event will tak place and eventually use a map in case  the location is not familiar.
+   
    Time: Adding the time of the event is important because it allows you to be on time.
+   
    Finally, you want to save your event.
+   
 - delete an event 
 - Change an event
 - Reminder
