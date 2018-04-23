@@ -18,4 +18,22 @@ public class TheCal {
 	static int Year, Month, Day, currentYear, currentMonth;
 	
 
+public static void main (String args[]){
+	
+
+	mainFrame = new JFrame ("Yuuugee"); 
+	mainFrame.setSize(330, 375); 
+	pane = mainFrame.getContentPane();
+	pane.setLayout(null); 
+	mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	
+	labelMonth = new JLabel ("January");
+	labelYear = new JLabel ("Change year:");
+	comboYear = new JComboBox();
+	buttonPrev = new JButton ("<<");
+	buttonNext = new JButton (">>");
+	theScrollPane = new JScrollPane(tabelCalendar);
+	panelCal = new JPanel(null);
+	}
+
 }
