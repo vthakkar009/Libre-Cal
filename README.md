@@ -15,7 +15,6 @@ We yearn to provide an open source alternative to current calender applications 
 
 
 
-**Commands**
 
 
 **Installing**
