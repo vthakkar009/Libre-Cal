@@ -1,5 +1,7 @@
 # Libre-Cal
 
+
+
 ![librecal logo](https://user-images.githubusercontent.com/27735912/39158169-1af9821e-4724-11e8-9865-1e38b6020b98.png)
 
 **Mission statement**
@@ -57,7 +59,9 @@ We yearn to provide an open source alternative to current calender applications 
 
 Please read the [installation and build scripts](https://github.com/qariane/Libre-Cal/wiki/Installation-and-Build-Scripts) located in our wiki.
 
+
 **Testing**
+
 
 Please read [Testing](https://github.com/qariane/Libre-Cal/wiki/TESTING) located in our wiki for more details.
 
