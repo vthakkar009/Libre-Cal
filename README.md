@@ -1,6 +1,6 @@
 # Libre-Cal
 
-
+![librecal logo](https://user-images.githubusercontent.com/27735912/39158169-1af9821e-4724-11e8-9865-1e38b6020b98.png)
 
 **Mission statement**
 
