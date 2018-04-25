@@ -6,8 +6,6 @@
 
 **Features**
 
-**jj**
-## jj
 - Add an event
 
    To add an event you can put all the details concerning your event in the following order: 
