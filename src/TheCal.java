@@ -88,7 +88,17 @@ public static void main (String args[]){
 	
 	refreshCalendar (Month, Year);
 }
+	public static void refreshCalendar(int month, int year){
+		String[] months =  {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+		int nod, som;
 		
+	buttonPrev.setEnabled(true);
+	buttonNext.setEnabled(true);
+	if (month == 0 && year <= Year-10){buttonPrev.setEnabled(false);}
+	if (month == 11 && year >= Year+100){buttonNext.setEnabled(false);}
+	LabelMonth.setText(months[month]);
+	LabelMonth.setBounds(550, 25, 25, 25);
+	comboYear.setSelectedItem(String.valueOf(year));
 }
 
 }
