@@ -16,7 +16,7 @@ public class TheCal {
 	static JScrollPane theScrollPane;
 	static JPanel panelCal;
 	static int Year, Month, Day, currentYear, currentMonth;
-	
+	static DefaultTableModel mtabelCal;
 
 public static void main (String args[]){
 	
@@ -67,7 +67,38 @@ public static void main (String args[]){
 	currentMonth = Month; //Match month and year
 	currentYear = Year;
 		
-		
+	String[] headers = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun",}; //All headers
+	for (int i=0; i<7; i++){
+	mtabelCal.addColumn(headers[i]);
 	}
+	
+	tabelCal.getParent().setBackground(tabelCal.getBackground());
+	tabelCal.getTableHeader().setResizingAllowed(true);
+	tabelCal.getTableHeader().setReorderingAllowed(true);
+	tabelCal.setColumnSelectionAllowed(true);
+	tabelCal.setRowSelectionAllowed(true);
+	tabelCal.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+	tabelCal.setRowHeight(75);
+	mtabelCal.setColumnCount(7);
+	mtabelCal.setRowCount(6);
+	
+	for (int i=Year-100; i<=Year+100; i++){
+		comboYear.addItem(String.valueOf(i));
+	}
+	
+	refreshCalendar (Month, Year);
+}
+	public static void refreshCalendar(int month, int year){
+		String[] months =  {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+		int nod, som;
+		
+	buttonPrev.setEnabled(true);
+	buttonNext.setEnabled(true);
+	if (month == 0 && year <= Year-10){buttonPrev.setEnabled(false);}
+	if (month == 11 && year >= Year+100){buttonNext.setEnabled(false);}
+	LabelMonth.setText(months[month]);
+	LabelMonth.setBounds(550, 25, 25, 25);
+	comboYear.setSelectedItem(String.valueOf(year));
+}
 
 }
