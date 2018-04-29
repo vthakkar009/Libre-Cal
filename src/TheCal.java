@@ -34,6 +34,40 @@ public static void main (String args[]){
 	buttonNext = new JButton (">>");
 	theScrollPane = new JScrollPane(tabelCalendar);
 	panelCal = new JPanel(null);
+	
+	panelCal.setBorder(BorderFactory.createTitledBorder("Calendar"));
+	
+	buttonPrev.addActionListener(new buttonPrev_Action());
+	buttonNext.addActionListener(new buttonNext_Action());
+	comboYear.addActionListener(new comboYear_Action());
+	
+	pane.add(panelCal);
+	panelCal.add(LabelMonth);
+	panelCal.add(LabelYear);
+	panelCal.add(comboYear);
+	panelCal.add(buttonPrev);
+	panelCal.add(buttonNext);
+	panelCal.add(theScrollPane);
+	
+	panelCal.setBounds(0, 0, 1920, 1920);
+	LabelMonth.setBounds(500, 50, 200, 50);
+	LabelYear.setBounds(30, 575, 150, 50);
+	comboYear.setBounds(30, 600, 100, 30);
+	buttonPrev.setBounds(10, 25, 150, 40);
+	buttonNext.setBounds(1090, 25, 150, 40);
+	theScrollPane.setBounds(10, 100, 1240, 525);
+	
+	mainFrame.setResizable(true);
+	mainFrame.setVisible(true);
+	
+	GregorianCalendar cal = new GregorianCalendar(); //Create calendar
+	Day = cal.get(GregorianCalendar.DAY_OF_MONTH); //Get day
+	Month = cal.get(GregorianCalendar.MONTH); //Get month
+	Year = cal.get(GregorianCalendar.YEAR); //Get year
+	currentMonth = Month; //Match month and year
+	currentYear = Year;
+		
+		
 	}
 
 }
