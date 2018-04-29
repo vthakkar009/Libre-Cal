@@ -99,6 +99,50 @@ public static void main (String args[]){
 	LabelMonth.setText(months[month]);
 	LabelMonth.setBounds(550, 25, 25, 25);
 	comboYear.setSelectedItem(String.valueOf(year));
+
+	for (int i=0; i<6; i++){
+	for (int j=0; j<7; j++){
+	mtabelCal.setValueAt(null, i, j);
+	}
 }
+	GregorianCalendar cal = new GregorianCalendar(year, month, 1);
+	nod = cal.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
+	som = cal.get(GregorianCalendar.DAY_OF_WEEK);
+			
+	for (int i=1; i<=nod; i++){
+		int row = new Integer((i+som-2)/7);
+		int column  =  (i+som-2)%7;
+		mtabelCal.setValueAt(i, row, column);
+	}
+
+	tabelCal.setDefaultRenderer(tabelCal.getColumnClass(0), new tabelCalRenderer());
+}
+
+	for (int i=0; i<6; i++){
+	for (int j=0; j<7; j++){
+	mtabelCal.setValueAt(null, i, j);
+	}
+}
+		
+	GregorianCalendar cal = new GregorianCalendar(year, month, 1);
+	nod = cal.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
+	som = cal.get(GregorianCalendar.DAY_OF_WEEK);
+
+	for (int i=1; i<=nod; i++){
+	int row = new Integer((i+som-2)/7);
+	int column  =  (i+som-2)%7;
+	mtabelCal.setValueAt(i, row, column);}
+	tabelCal.setDefaultRenderer(tabelCal.getColumnClass(0), new tabelCalRenderer());
+		}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	}
 
 }
