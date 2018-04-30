@@ -134,8 +134,25 @@ public static void main (String args[]){
 	mtabelCal.setValueAt(i, row, column);}
 	tabelCal.setDefaultRenderer(tabelCal.getColumnClass(0), new tabelCalRenderer());
 		}
-
-	
+	static class tabelCalRenderer extends DefaultTableCellRenderer{
+		public Component getTableCellRendererComponent (JTable table, Object value, boolean selected, boolean focused, int row, int column){
+			super.getTableCellRendererComponent(table, value, selected, focused, row, column);
+			if (column == 0 || column == 6){ //Week-end
+				setBackground(new Color(255, 220, 220));
+			}
+			else{ //Week
+				setBackground(new Color(255, 255, 255));
+			}
+			if (value != null){
+				if (Integer.parseInt(value.toString()) == Day && currentMonth == Month && currentYear == Year){ //Today
+					setBackground(new Color(220, 220, 255));
+				}
+			}
+			setBorder(null);
+			setForeground(Color.black);
+			return this;
+		}
+	}
 	
 	
 	
