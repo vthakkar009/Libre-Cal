@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 
-public class TheCal {
+public class TheCal {//Authored by Vaibhav Thakkar, Ariane Quenum, Michael Woelfel
 	
 	static JLabel LabelMonth, LabelYear;
 	static JButton buttonPrev, buttonNext;
@@ -153,13 +153,40 @@ public static void main (String args[]){
 			return this;
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
+	static class buttonPrev_Action implements ActionListener{
+		public void actionPerformed (ActionEvent e){
+			if (currentMonth == 0) {
+				currentMonth = 11;
+				currentYear -= 1;
+			}
+			else {
+				currentMonth -= 1;
+			}
+			refreshCalendar(currentMonth, currentYear);
+		}
 	}
-
+	static class buttonNext_Action implements ActionListener{
+		
+	public void actionPerformed (ActionEvent e){
+		if (currentMonth == 11){
+			currentMonth = 0;
+			currentYear += 1;
+			}
+		else{
+			currentMonth += 1;
+	}
+		refreshCalendar(currentMonth, currentYear);
+		}
+	}
+	static class comboYear_Action implements ActionListener{
+	
+	public void actionPerformed (ActionEvent e){
+		if (comboYear.getSelectedItem() != null){
+		String b = comboYear.getSelectedItem().toString();
+		currentYear = Integer.parseInt(b);
+		refreshCalendar(currentMonth, currentYear);
+			}
+		}
+	}
 }
+
