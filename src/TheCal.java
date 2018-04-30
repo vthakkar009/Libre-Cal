@@ -118,22 +118,7 @@ public static void main (String args[]){
 	tabelCal.setDefaultRenderer(tabelCal.getColumnClass(0), new tabelCalRenderer());
 }
 
-	for (int i=0; i<6; i++){
-	for (int j=0; j<7; j++){
-	mtabelCal.setValueAt(null, i, j);
-	}
-}
-		
-	GregorianCalendar cal = new GregorianCalendar(year, month, 1);
-	nod = cal.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
-	som = cal.get(GregorianCalendar.DAY_OF_WEEK);
-
-	for (int i=1; i<=nod; i++){
-	int row = new Integer((i+som-2)/7);
-	int column  =  (i+som-2)%7;
-	mtabelCal.setValueAt(i, row, column);}
-	tabelCal.setDefaultRenderer(tabelCal.getColumnClass(0), new tabelCalRenderer());
-		}
+	
 	static class tabelCalRenderer extends DefaultTableCellRenderer{
 		public Component getTableCellRendererComponent (JTable table, Object value, boolean selected, boolean focused, int row, int column){
 			super.getTableCellRendererComponent(table, value, selected, focused, row, column);
