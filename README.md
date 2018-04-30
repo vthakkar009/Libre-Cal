@@ -6,7 +6,7 @@
 
 **Mission Statement**:
 
-We yearn to provide an open source alternative to current calender applications while keeping the open source comminty great always.
+We yearn to provide an open source alternative to current calender applications while keeping the open source community great always.
 
 **Features**
 
