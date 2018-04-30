@@ -1,13 +1,15 @@
-# Libre-Cal
+# *Libre*Cal
+![librecal logo](https://user-images.githubusercontent.com/27735912/39158169-1af9821e-4724-11e8-9865-1e38b6020b98.png)
+## &#x1F535; 
 
 
 
-**Mission statement**
+**Mission Statement**:
 
-We yearn to provide an open source alternative to current calender applications while keeping the open source comminty great always.
-
+We yearn to provide an open source alternative to current calender applications while keeping the open source community great always.
 
 **Features**
+
 - Add an event
 
    To add an event you can put all the details concerning your event in the following order: 
@@ -57,7 +59,9 @@ We yearn to provide an open source alternative to current calender applications 
 
 Please read the [installation and build scripts](https://github.com/qariane/Libre-Cal/wiki/Installation-and-Build-Scripts) located in our wiki.
 
+
 **Testing**
+
 
 Please read [Testing](https://github.com/qariane/Libre-Cal/wiki/TESTING) located in our wiki for more details.
 
