@@ -18,7 +18,7 @@ public class TheCal {//Authored by Vaibhav Thakkar, Ariane Quenum, Michael Woelf
 	static int Year, Month, Day, currentYear, currentMonth;
 	static DefaultTableModel mtabelCal;
 
-public static void main (String args[]){
+         public static void main (String args[]){
 	
 
 	mainFrame = new JFrame ("Yuuugee"); 
@@ -27,12 +27,14 @@ public static void main (String args[]){
 	pane.setLayout(null); 
 	mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	
-	labelMonth = new JLabel ("January");
-	labelYear = new JLabel ("Change year:");
+	LabelMonth = new JLabel ("January");
+	LabelYear = new JLabel ("Change year:");
 	comboYear = new JComboBox();
 	buttonPrev = new JButton ("<<");
 	buttonNext = new JButton (">>");
-	theScrollPane = new JScrollPane(tabelCalendar);
+	mtabelCal = new DefaultTableModel(){public boolean isCellEditable(int rowIndex, int mColIndex){return false;}};
+	tabelCal = new JTable(mtabelCal);
+	theScrollPane = new JScrollPane(tabelCal);
 	panelCal = new JPanel(null);
 	
 	panelCal.setBorder(BorderFactory.createTitledBorder("Calendar"));
@@ -71,7 +73,7 @@ public static void main (String args[]){
 	for (int i=0; i<7; i++){
 	mtabelCal.addColumn(headers[i]);
 	}
-	
+
 	tabelCal.getParent().setBackground(tabelCal.getBackground());
 	tabelCal.getTableHeader().setResizingAllowed(true);
 	tabelCal.getTableHeader().setReorderingAllowed(true);
@@ -101,8 +103,8 @@ public static void main (String args[]){
 	comboYear.setSelectedItem(String.valueOf(year));
 
 	for (int i=0; i<6; i++){
-	for (int j=0; j<7; j++){
-	mtabelCal.setValueAt(null, i, j);
+	    for (int j=0; j<7; j++){
+	         mtabelCal.setValueAt(null, i, j);
 	}
 }
 	GregorianCalendar cal = new GregorianCalendar(year, month, 1);
@@ -118,22 +120,7 @@ public static void main (String args[]){
 	tabelCal.setDefaultRenderer(tabelCal.getColumnClass(0), new tabelCalRenderer());
 }
 
-	for (int i=0; i<6; i++){
-	for (int j=0; j<7; j++){
-	mtabelCal.setValueAt(null, i, j);
-	}
-}
-		
-	GregorianCalendar cal = new GregorianCalendar(year, month, 1);
-	nod = cal.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
-	som = cal.get(GregorianCalendar.DAY_OF_WEEK);
-
-	for (int i=1; i<=nod; i++){
-	int row = new Integer((i+som-2)/7);
-	int column  =  (i+som-2)%7;
-	mtabelCal.setValueAt(i, row, column);}
-	tabelCal.setDefaultRenderer(tabelCal.getColumnClass(0), new tabelCalRenderer());
-		}
+	
 	static class tabelCalRenderer extends DefaultTableCellRenderer{
 		public Component getTableCellRendererComponent (JTable table, Object value, boolean selected, boolean focused, int row, int column){
 			super.getTableCellRendererComponent(table, value, selected, focused, row, column);
